@@ -136,10 +136,12 @@ body {
     flex-direction: column;
     justify-content: space-around;
     padding: 13px 11px;
+    transition: all 1s ease;
 }
 
 .move {
-    right: -100%;
+    position: absolute;
+    right: 0%;
 }
 
 .line1,
