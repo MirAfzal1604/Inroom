@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script src=".//css/fontawesome.min.css"></script>
+    <script src="https://kit.fontawesome.com/e01e13ae9c.js" crossorigin="anonymous"></script>
     <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="./img/logo.png" type="image/x-icon">
     <title>Document</title>
@@ -14,11 +14,11 @@
 
 <body>
 
-    <div class="loading">
+    <!-- <div class="loading">
         <video autoplay muted class="video">
             <source src="./media/bg.mp4" type="video/mp4">
         </video>
-    </div>
+    </div> -->
 
     <div class="links">
         <ul>
@@ -32,7 +32,7 @@
                 <a href="#" onclick="navClose()">Portfolio</a>
             </li>
             <li>
-                <a href="#" onclick="navClose()">Testimonials</a>
+                <a href="#" onclick="openCalculator()">Calculator</a>
             </li>
             <li>
                 <a href="#" onclick="navClose()">About</a>
@@ -41,12 +41,19 @@
                 <a href="#" onclick="navClose()">Contact</a>
             </li>
         </ul>
+
+        <div class="burger" onclick="closeCalculator()">
+            <div class="line-1"></div>
+            <div class="line-3"></div>
+        </div>
+
+        <div class="calculator"></div>
     </div>
 
     <div class="nav_links">
         <div class="container">
             <div class="menu">
-                <h3 class="logo">inroom</h3>
+                <img src="./media/logo.png" alt="logo" class="logo">
                 <div class="hamburger-menu" onclick="openNav(this)">
                     <div class="line1"></div>
                     <div class="line2"></div>
@@ -57,19 +64,22 @@
     </div>
 
     <main>
-        <video autoplay muted loop class="main_img">
-                        <source src="./media/bg-video.mp4" type="video/mp4">
-            </video>
+        <video autoplay muted loop="true" class="main_img">
+            <source src="./media/bg-video.mp4" type="video/mp4">
+        </video>
+
+
 
 
         <div style="height: 1600px;"></div>
     </main>
 
 
+    <script src="./js/navbar.js"></script>
+    <script src="./js/calculator.js"></script>
 
     <script src="./js/loading.js"></script>
     <script src="./js/jquery.min.js"></script>
-    <script src="./js/navbar.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
 
 </body>
