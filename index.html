@@ -14,60 +14,62 @@
 
 <body>
 
-    <div class="loading">
+    <!-- <div class="loading">
         <video autoplay muted class="video">
-            <source src="./media/bg.mp4" type="video/mp4">
+            <source src="./media/bg2.mp4" type="video/mp4">
         </video>
-    </div>
+    </div> -->
 
-    <div class="links">
-        <ul>
-            <li>
-                <a href="#" onclick="navClose()">Home</a>
-            </li>
-            <li>
-                <a href="#" onclick="navClose()">Services</a>
-            </li>
-            <li>
-                <a href="#" onclick="navClose()">Portfolio</a>
-            </li>
-            <li>
-                <a href="#" onclick="openCalculator()">Calculator</a>
-            </li>
-            <li>
-                <a href="#" onclick="navClose()">About</a>
-            </li>
-            <li>
-                <a href="#" onclick="navClose()">Contact</a>
-            </li>
-        </ul>
+    <main>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="#" onclick="navClose()">Home</a>
+                </li>
+                <li>
+                    <a href="#" onclick="navClose()">Services</a>
+                </li>
+                <li>
+                    <a href="#" onclick="navClose()">Portfolio</a>
+                </li>
+                <li>
+                    <a onclick="openCalculator()">Calculator</a>
+                </li>
+                <li>
+                    <a href="#" onclick="navClose()">About</a>
+                </li>
+                <li>
+                    <a href="#" onclick="navClose()">Contact</a>
+                </li>
+            </ul>
 
-        <div class="burger" onclick="closeCalculator()">
-            <div class="line-1"></div>
-            <div class="line-3"></div>
-        </div>
-
-        <div class="calculator">
-            <div class="calculator_in">
-                <p>Calculator</p>
+            <div class="burger" onclick="closeCalculator()">
+                <div class="line-1"></div>
+                <div class="line-3"></div>
             </div>
-        </div>
-    </div>
 
-    <div class="nav_links">
-        <div class="container">
-            <div class="menu">
-                <img src="./media/logo.png" alt="logo" class="logo">
-                <div class="hamburger-menu" onclick="openNav(this)">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+            <div class="calculator">
+                <div class="calculator_in">
+                    <p>Calculator</p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <main>
+        <div class="nav_links">
+            <div class="container">
+                <div class="menu">
+                    <a href="#">
+                        <img src="./media/logo.png" alt="logo" class="logo">
+                    </a>
+                    <div class="hamburger-menu" onclick="openNav(this)">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <video autoplay muted loop="true" class="main_img">
             <source src="./media/bg-video.mp4" type="video/mp4">
         </video>
