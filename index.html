@@ -14,11 +14,11 @@
 
 <body>
 
-    <!-- <div class="loading">
+    <div class="loading">
         <video autoplay muted class="video">
             <source src="./media/bg2.mp4" type="video/mp4">
         </video>
-    </div> -->
+    </div>
 
     <main>
         <div class="links">
@@ -48,9 +48,22 @@
                 <div class="line-3"></div>
             </div>
 
-            <div class="calculator">
+            <div class="calculator ">
                 <div class="calculator_in">
-                    <p>Calculator</p>
+                    <p id="money">400 $</p>
+                    <p id="get">50 M<sup>2</sup></p>
+                    <input type="range" oninput="showVal(this.value)" value="1" min="50" max="250">
+
+                    <form action="#" class="calculator_form">
+                        <input type="radio" name="radio" value="radio1" id="flat" onchange="checkRadio(value)" />
+                        <label for="flat">Kvartira</label><br>
+
+                        <input type="radio" name="radio" value="radio2" id="house" onchange="checkRadio(value)" />
+                        <label for="house">Uchastka</label><br>
+
+                        <input type="radio" name="radio" value="radio3" id="office" onchange="checkRadio(value)" />
+                        <label for="office">Office</label>
+                    </form>
                 </div>
             </div>
         </div>
@@ -74,16 +87,12 @@
             <source src="./media/bg-video.mp4" type="video/mp4">
         </video>
 
-
-
-
         <div style="height: 1600px;"></div>
     </main>
 
 
     <script src="./js/navbar.js"></script>
     <script src="./js/calculator.js"></script>
-
     <script src="./js/loading.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
