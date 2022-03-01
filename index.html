@@ -14,11 +14,11 @@
 
 <body>
 
-    <div class="loading">
+    <!-- <div class="loading">
         <video autoplay muted class="video">
             <source src="./media/bg2.mp4" type="video/mp4">
         </video>
-    </div>
+    </div> -->
 
     <main>
         <div class="links">
@@ -50,19 +50,25 @@
 
             <div class="calculator ">
                 <div class="calculator_in">
-                    <p id="money">400 $</p>
-                    <p id="get">50 M<sup>2</sup></p>
-                    <input type="range" oninput="showVal(this.value)" value="1" min="50" max="250">
+                    <p id="money">0 $</p>
+                    <p id="get">0 m<sup>2</sup></p>
+                    <input type="range" oninput="showVal(this.value)" value="0" min="0" max="300">
 
                     <form action="#" class="calculator_form">
-                        <input type="radio" name="radio" value="radio1" id="flat" onchange="checkRadio(value)" />
-                        <label for="flat">Kvartira</label><br>
+                        <div class="formRangeDiv">
+                            <input type="radio" name="radio" value="radio1" class="inputRange" id="flat" onchange="checkRadio(value)" />
+                            <label for="flat">Kvartira</label><br>
+                        </div>
 
-                        <input type="radio" name="radio" value="radio2" id="house" onchange="checkRadio(value)" />
-                        <label for="house">Uchastka</label><br>
+                        <div class="formRangeDiv">
+                            <input type="radio" name="radio" value="radio2" class="inputRange" id="house" onchange="checkRadio(value)" />
+                            <label for="house">Uchastka</label><br>
+                        </div>
 
-                        <input type="radio" name="radio" value="radio3" id="office" onchange="checkRadio(value)" />
-                        <label for="office">Office</label>
+                        <div class="formRangeDiv">
+                            <input type="radio" name="radio" value="radio3" class="inputRange" id="office" onchange="checkRadio(value)" />
+                            <label for="office">Office</label>
+                        </div>
                     </form>
                 </div>
             </div>

@@ -8,7 +8,7 @@ var money = document.getElementById("money");
 var step = 0;
 
 function showVal(newVal) {
-    showM.innerHTML = `${newVal} ${"M<sup>2</sup>"} `;
+    showM.innerHTML = `${newVal} ${"m<sup>2</sup>"} `;
     calculat = newVal * step;
     money.innerHTML = `${calculat} $`;
 }

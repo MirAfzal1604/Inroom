@@ -88,7 +88,7 @@ body {
     opacity: 1;
     visibility: visible;
     z-index: 1;
-    width: 20%;
+    width: 30%;
 }
 
 .forZ {
@@ -196,29 +196,48 @@ body {
 input[type="range"] {
     -webkit-appearance: none;
     width: 100%;
-    height: 7px;
+    height: 10px;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 5px;
-    background-image: linear-gradient(#ff4500, #ff4500);
     background-repeat: no-repeat;
 }
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 20px;
-    width: 20px;
+    appearance: none;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    background: #ff4500;
-    cursor: ew-resize;
-    box-shadow: 0 0 2px 0 #555;
-    transition: all .3s ease-in-out;
+    background: #7a00ff;
+    border: #f9ca24 5px solid;
+    cursor: pointer;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
-    -webkit-appearance: none;
-    box-shadow: none;
-    border: none;
-    background: transparent;
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #f0932b;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #f0932b;
+    border: #f9ca24 5px solid;
+    cursor: pointer;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: #f9ca24;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+    border: 0;
 }
 
 .calculator_in p,
@@ -241,10 +260,30 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
 }
 
+.formRangeDiv {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.inputRange {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: #7a00ff;
+    border-radius: 50%;
+}
+
+.inputRange:checked {
+    background: linear-gradient(135deg, #7844e9 0%, #0979ff 100%);
+    box-sizing: border-box;
+    border: 5px solid #e5edf5;
+}
+
 .calculator_apper {
     width: 100%;
     height: 100%;
-    background: rgb(4, 24, 116);
+    background: rgb(38, 105, 105);
     z-index: 20;
     opacity: 1;
     visibility: visible;
